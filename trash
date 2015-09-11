@@ -1,0 +1,9 @@
+#! /usr/bin/env ruby
+
+class Trash
+  def initialize(file)
+    `mv #{file} ~/.Trash`
+  end
+end
+
+Trash.new(ARGV[0])
