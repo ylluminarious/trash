@@ -2,7 +2,7 @@
 
 class Trash
   def initialize(file)
-    `mv #{file} ~/.Trash`
+    `mv \"#{file}\" ~/.Trash`
   end
 end
 
